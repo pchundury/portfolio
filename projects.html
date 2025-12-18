@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects — Pramod Chundury</title>
+  <meta name="description" content="Human-centered AI researcher focused on multimodal interaction, accessibility, and rigorous evaluation." />
+  <meta name="color-scheme" content="light" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="index.html">Pramod Chundury</a>
+      <ul>
+        <li><a class="pill" href="index.html">Home</a></li>
+        <li><a class="pill" href="projects.html" aria-current="page">Projects</a></li>
+        <li><a class="pill" href="publications.html">Publications</a></li>
+        <li><a class="pill" href="writing.html">Writing &amp; Teaching</a></li>
+        <li><a class="pill" href="assets/Pramod_CV_12182025.pdf">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    
+
+<section class="hero">
+  <h1>Projects</h1>
+  <p class="lede">
+    Featured case studies are shown first. Below that, you can browse my full project set using search and filters.
+  </p>
+</section>
+
+<section class="section" aria-labelledby="featured">
+  <h2 id="featured">Featured case studies</h2>
+
+  <div class="grid" aria-label="Featured projects">
+    <article class="card">
+      <h3><a href="#narratives">Textual narratives for causality &amp; complex systems</a></h3>
+      <p>Design space + CAUSEWORKS system + mixed-methods evaluation of narrative explanations for causal reasoning.</p>
+      <ul class="meta">
+        <li><span class="tag">Human–AI explanation</span></li>
+        <li><span class="tag">NLG</span></li>
+        <li><span class="tag">Mixed methods</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="#multimodal">Multimodal chart accessibility (touch + sound + speech)</a></h3>
+      <p>Expert-informed foundation and design principles for non-visual data interaction and “born-accessible” tooling.</p>
+      <ul class="meta">
+        <li><span class="tag">Accessibility</span></li>
+        <li><span class="tag">Multimodal</span></li>
+        <li><span class="tag">Design implications</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="#wearables">Accessible smartwatch interactions</a></h3>
+      <p>Two studies (assessment + participatory elicitation) producing actionable interaction guidelines for wearables.</p>
+      <ul class="meta">
+        <li><span class="tag">Inclusive design</span></li>
+        <li><span class="tag">Wearables</span></li>
+        <li><span class="tag">Guidelines</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3><a href="#privacy">Privacy, perception, and emerging technology</a></h3>
+      <p>Empirical study of drones showing how form factor + feedback shape privacy and security perceptions.</p>
+      <ul class="meta">
+        <li><span class="tag">Privacy</span></li>
+        <li><span class="tag">Trust</span></li>
+        <li><span class="tag">User study</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="browse">
+  <h2 id="browse">Browse all projects</h2>
+  <p class="kicker">
+    Use the search box and filters to browse projects. Results update as you type. This section is fully keyboard accessible.
+  </p>
+
+  <div>
+    <label for="q">Search projects</label>
+    <input id="q" type="search" inputmode="search" autocomplete="off" placeholder="Search by title, topic, method, or venue" />
+  </div>
+
+  <fieldset aria-describedby="filter-help">
+    <legend>Filter by tag</legend>
+    <p id="filter-help" class="small">Select one or more tags. Clear filters to show everything.</p>
+    <div class="filter-row" id="filters"></div>
+    <p><button type="button" id="clear">Clear filters</button></p>
+  </fieldset>
+
+  <p class="small" role="status" aria-live="polite" id="count">Loading projects…</p>
+  <div class="all-list" id="results" aria-label="All projects results"></div>
+</section>
+
+<section class="section" id="narratives" aria-labelledby="narratives-h">
+  <h2 id="narratives-h">Textual narratives for causality &amp; complex systems (CAUSEWORKS)</h2>
+  <!-- Keep the detailed case study text from v2 below -->
+  <div class="two-col">
+    <div>
+      <p class="kicker">
+        <span class="pub-title">Once Upon A Time In Visualization: Understanding the Use of Textual Narratives for Causality</span><br />
+        <span class="pub-venue">IEEE TVCG (VIS), 2021</span> · <a href="#">PDF</a> · <a href="#">DOI</a>
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Causality visualizations can help analysts trace cause→effect chains over time, but they become difficult to use as event sequences
+        grow in scale and complexity. The question is when text can complement visualization rather than distract from it.
+      </p>
+
+      <h3>Approach</h3>
+      <ul>
+        <li>Proposed a <strong>design space</strong> for how textual narratives can describe causal data (what to say, when to say it, and how it relates to the visual).</li>
+        <li>Ran a <strong>crowdsourced study</strong> comparing performance with and without narratives across two causality visualization types (causal graphs and Hasse diagrams).</li>
+        <li>Built <strong>CAUSEWORKS</strong>, a causality analytics system that integrates automatic narrative generation based on the design space.</li>
+      </ul>
+
+      <h3>Evaluation</h3>
+      <ul>
+        <li>Crowdsourced experiment: participants recovered causality information from visualizations with vs. without narratives.</li>
+        <li>Expert interviews: domain experts used CAUSEWORKS to interpret complex events and interventions.</li>
+      </ul>
+
+      <h3>Key findings</h3>
+      <ul>
+        <li>Narratives can reduce the cognitive overhead of reading complex causal structures when aligned to task intent.</li>
+        <li>Effectiveness depends on visualization type and what causal metadata the narrative highlights (e.g., cause/effect, correlation, connectivity, lifecycle).</li>
+        <li>Experts valued narratives as “guided interpretation,” especially for intervention reasoning in CAUSEWORKS.</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <p>
+        Provides an evidence-backed design and evaluation template for <strong>human-centered explanations</strong> in analytical systems—
+        directly relevant to AI systems that need to communicate reasoning, uncertainty, and causal claims.
+      </p>
+    </div>
+
+    <aside class="card" aria-label="Role and methods">
+      <h3>My role</h3>
+      <ul>
+        <li>Research + study design</li>
+        <li>Design space development</li>
+        <li>System integration of narrative mechanism</li>
+        <li>Mixed-methods evaluation</li>
+      </ul>
+      <h3>Methods &amp; tools</h3>
+      <ul>
+        <li>Experimental design</li>
+        <li>Crowdsourcing</li>
+        <li>Expert interviews</li>
+        <li>Natural language generation (NLG)</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="multimodal" aria-labelledby="multimodal-h">
+  <h2 id="multimodal-h">Multimodal chart accessibility (touch + sound + speech)</h2>
+  <div class="two-col">
+    <div>
+      <p class="kicker">
+        Representative paper: <span class="pub-title">Towards Understanding Sensory Substitution for Accessible Visualization: An Interview Study</span><br />
+        <span class="pub-venue">Preprint</span> · <a href="#">PDF</a>
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Visualization is often inaccessible to blind and low-vision (BLV) users. Accessibility requires more than retrofitting alt-text:
+        it requires designing interaction and representation that leverage non-visual senses for spatial reasoning.
+      </p>
+
+      <h3>Approach</h3>
+      <ul>
+        <li>Interviewed <strong>10 Orientation &amp; Mobility (O&amp;M) experts</strong>—all blind—to understand how non-visual senses support spatial layout understanding.</li>
+        <li>Used <strong>thematic analysis</strong> to extract design implications for sonification/auralization and tactile interaction.</li>
+      </ul>
+
+      <h3>Key findings</h3>
+      <ul>
+        <li>Blind people commonly use <strong>both sound and touch</strong> to build mental maps; designs should not assume audio-only solutions.</li>
+        <li>Experts recommended supporting <strong>combined modalities</strong> (e.g., tactile scaffolds + auditory cues) because tactile charts may be familiar and fast for many users.</li>
+        <li>Auditory affordances are powerful for trends and structure, but should be paired with mechanisms for precise values and orientation.</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <p>
+        Establishes a principled foundation for multimodal data access designs and motivates “born-accessible” tooling where accessibility
+        representations are first-class outputs.
+      </p>
+    </div>
+
+    <aside class="card" aria-label="How it translates to Apple">
+      <h3>My role</h3>
+      <ul>
+        <li>Multimodal interaction design (touch + audio + speech)</li>
+        <li>Inclusive, real-user centered research</li>
+        <li>Guidance for AI systems that generate visual outputs by default</li>
+      </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>Expert interviews</li>
+        <li>Thematic analysis</li>
+        <li>Design implications</li>
+      </ul>
+    </aside>
+  </div>
+
+  <hr />
+
+  <h3>Related systems (brief)</h3>
+  <div class="grid">
+    <article class="card">
+      <h3>TactualPlot / touch exploration + sonification</h3>
+      <p>
+        Interaction technique where touch exploration yields continuous audio for trend/density and speech on demand for precise labels/values.
+      </p>
+      <ul class="meta">
+        <li><span class="tag">Prototype</span></li>
+        <li><span class="tag">Multimodal UX</span></li>
+        <li><span class="tag">Evaluation</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Refreshable tactile displays (e.g., multi-line braille tablets)</h3>
+      <p>
+        Tactile representations preserve scaffolds (axes, ticks, legends) and support navigation via panning/zooming while pairing audio/speech for detail.
+      </p>
+      <ul class="meta">
+        <li><span class="tag">Tactile</span></li>
+        <li><span class="tag">Spatial reasoning</span></li>
+        <li><span class="tag">Accessibility</span></li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h3>Born-accessible chart generation (prompt-driven era)</h3>
+      <p>
+        Principle: generate accessibility metadata (alt-text, sonification mappings, tactile-ready layers) alongside visuals to keep representations aligned.
+      </p>
+      <ul class="meta">
+        <li><span class="tag">LLMs</span></li>
+        <li><span class="tag">Tooling</span></li>
+        <li><span class="tag">Platform thinking</span></li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section" id="wearables" aria-labelledby="wearables-h">
+  <h2 id="wearables-h">Accessible interactions for wearables (smartwatch input)</h2>
+  <div class="two-col">
+    <div>
+      <p class="kicker">
+        <span class="pub-title">Exploring Accessible Smartwatch Interactions for People with Upper Body Motor Impairments</span><br />
+        <span class="pub-venue">CHI 2018</span> · <a href="https://doi.org/10.1145/3173574.3174062">DOI</a>
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Smartwatches are always-available but have a very small interaction surface and often assume precise bimanual touch input.
+        This creates major barriers for people with upper-body motor impairments.
+      </p>
+
+      <h3>Approach</h3>
+      <ul>
+        <li><strong>Study 1 (accessibility assessment):</strong> evaluated how accessible off-the-shelf smartwatch inputs are (taps, swipes, button actions, text input, voice dictation) with 10 participants.</li>
+        <li><strong>Study 2 (participatory elicitation):</strong> 11 participants created gestures for 16 common smartwatch actions across touchscreen and non-touchscreen areas (bezel, strap, and on-body locations).</li>
+      </ul>
+
+      <h3>Key findings</h3>
+      <ul>
+        <li>Not all participants could reliably perform common touch interactions (tap, swipe, button actions), and some had difficulty with speech input.</li>
+        <li>Participants often preferred interaction regions closer to the dominant hand on the watch (bezel/strap) over on-body locations.</li>
+        <li>Users created accessible alternatives to familiar touchscreen gestures (e.g., alternatives to two-finger zoom) when precision was hard.</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <p>
+        Provides concrete design recommendations for accessible smartwatch interaction, extending beyond the touchscreen by using the watch’s physical form factor.
+      </p>
+    </div>
+
+    <aside class="card" aria-label="Deliverables">
+      <h3>Deliverables</h3>
+      <ul>
+        <li>Empirical evidence on what fails (and why) in current smartwatch inputs</li>
+        <li>Accessible gesture vocabulary ideas grounded in participant preference</li>
+        <li>Design guidelines for wearable interaction</li>
+      </ul>
+      <h3>Methods</h3>
+      <ul>
+        <li>Accessibility assessment</li>
+        <li>Participatory elicitation</li>
+        <li>Qualitative + quantitative analysis</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="privacy" aria-labelledby="privacy-h">
+  <h2 id="privacy-h">Privacy, perception, and emerging technology (drones)</h2>
+  <div class="two-col">
+    <div>
+      <p class="kicker">
+        <span class="pub-title">“Spiders in the Sky”: User Perceptions of Drones, Privacy, and Security</span><br />
+        <span class="pub-venue">CHI 2017</span> · <a href="http://dx.doi.org/10.1145/3025453.3025632">DOI</a>
+      </p>
+
+      <h3>Problem</h3>
+      <p>
+        Drones introduce privacy and security concerns, but regulations and design guidance have historically been minimal.
+        Understanding user mental models is necessary to inform both policy and product design.
+      </p>
+
+      <h3>Approach &amp; evaluation</h3>
+      <ul>
+        <li>Laboratory study with <strong>20 participants</strong>.</li>
+        <li>Between-subjects comparison: participants interacted with a <strong>real drone</strong> or a <strong>life-sized model drone</strong> to isolate how real-world features (sound, wind, speed) shape perception.</li>
+        <li>Multi-step tasks exposing recording, approach behavior, and control; plus interviews and sketching/annotation exercises to elicit mental models.</li>
+      </ul>
+
+      <h3>Key findings</h3>
+      <ul>
+        <li>Participants expressed concerns about surveillance and privacy, plus fear of injury/damage and discomfort disclosing personal info under drone observation.</li>
+        <li>Perceptions were strongly shaped by design attributes (size, speed, noise) and additional cues (camera placement/quality, feedback lights, movements).</li>
+      </ul>
+
+      <h3>Impact</h3>
+      <p>
+        Produced actionable recommendations for drone design and regulation grounded in empirical evidence about human perception and trust.
+      </p>
+    </div>
+
+    <aside class="card" aria-label="Findings">
+      <h3>Findings</h3>
+      <ul>
+        <li>Trust and privacy are interaction problems, not just policy problems</li>
+        <li>Form factor and system feedback shape perceived intent</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<script>
+(function(){
+  // Data for "browse all projects" (keep concise; link featured items to sections above).
+  const projects = [
+    {
+      id: "narratives",
+      title: "Textual narratives for causality & complex systems (CAUSEWORKS)",
+      venue: "IEEE TVCG (VIS), 2021",
+      desc: "Design space + CAUSEWORKS system + mixed-methods evaluation of narrative explanations for causal reasoning.",
+      tags: ["Human–AI explanation","NLG","Mixed methods","Visualization"],
+      href: "#narratives"
+    },
+    {
+      id: "multimodal",
+      title: "Multimodal chart accessibility (touch + sound + speech)",
+      venue: "Preprint + systems",
+      desc: "Expert-informed foundation and design principles for non-visual data interaction and born-accessible tooling.",
+      tags: ["Accessibility","Multimodal","Interviews","Design implications"],
+      href: "#multimodal"
+    },
+    {
+      id: "tactualplot",
+      title: "TactualPlot: touch exploration with sonification and speech on demand",
+      venue: "System + studies",
+      desc: "Touch-first chart exploration paired with audio for trend/density and speech for precise values/labels.",
+      tags: ["Accessibility","Multimodal","Prototype","Evaluation"],
+      href: "#multimodal"
+    },
+    {
+      id: "tactile-displays",
+      title: "Refreshable tactile displays for data access (multi-line braille tablets)",
+      venue: "Research line",
+      desc: "Tactile scaffolds (axes/ticks/legends) paired with audio/speech for drill-down and orientation.",
+      tags: ["Accessibility","Tactile","Multimodal","Interaction"],
+      href: "#multimodal"
+    },
+    {
+      id: "born-accessible",
+      title: "Born-accessible chart generation in the prompt-driven era",
+      venue: "ACM XRDS (student magazine), 2025",
+      desc: "Perspective: generate alt-text, sonification mappings, and tactile-ready layers alongside visuals to avoid automating inaccessibility.",
+      tags: ["Writing","Accessibility","LLMs","Platform thinking"],
+      href: "writing.html"
+    },
+    {
+      id: "wearables",
+      title: "Accessible smartwatch interactions for upper-body motor impairments",
+      venue: "CHI 2018",
+      desc: "Two studies (assessment + participatory elicitation) producing actionable interaction guidelines for wearables.",
+      tags: ["Inclusive design","Wearables","Participatory design","Evaluation"],
+      href: "#wearables"
+    },
+    {
+      id: "privacy",
+      title: "Drones: privacy, security, and user perception",
+      venue: "CHI 2017",
+      desc: "Empirical study showing how drone design attributes and feedback cues shape privacy and security perceptions.",
+      tags: ["Privacy","Trust","User study","Emerging tech"],
+      href: "#privacy"
+    }
+  ];
+
+  const q = document.getElementById("q");
+  const filtersEl = document.getElementById("filters");
+  const resultsEl = document.getElementById("results");
+  const countEl = document.getElementById("count");
+  const clearBtn = document.getElementById("clear");
+
+  const allTags = Array.from(new Set(projects.flatMap(p => p.tags))).sort((a,b)=>a.localeCompare(b));
+  const state = { query: "", tags: new Set() };
+
+  function escapeHtml(s){
+    return s.replace(/[&<>"']/g, m => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[m]));
+  }
+
+  function renderFilters(){
+    filtersEl.innerHTML = allTags.map(tag => {
+      const id = "tag-" + tag.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+      return `
+        <label for="${id}">
+          <input type="checkbox" id="${id}" name="tags" value="${escapeHtml(tag)}" />
+          ${escapeHtml(tag)}
+        </label>
+      `;
+    }).join("");
+    filtersEl.addEventListener("change", (e)=>{
+      if(e.target && e.target.name==="tags"){
+        const t = e.target.value;
+        if(e.target.checked) state.tags.add(t);
+        else state.tags.delete(t);
+        render();
+      }
+    });
+  }
+
+  function match(p){
+    const hay = (p.title + " " + p.venue + " " + p.desc + " " + p.tags.join(" ")).toLowerCase();
+    const okQuery = !state.query || hay.includes(state.query);
+    const okTags = state.tags.size === 0 || Array.from(state.tags).every(t => p.tags.includes(t));
+    return okQuery && okTags;
+  }
+
+  function render(){
+    const filtered = projects.filter(match);
+    countEl.textContent = `${filtered.length} project${filtered.length===1?"":"s"} shown.`;
+    resultsEl.innerHTML = filtered.map(p => `
+      <article class="all-item">
+        <h3><a href="${p.href}">${escapeHtml(p.title)}</a></h3>
+        <div class="small">${escapeHtml(p.venue)}</div>
+        <p>${escapeHtml(p.desc)}</p>
+        <ul class="meta" aria-label="Tags for ${escapeHtml(p.title)}">
+          ${p.tags.map(t=>`<li><span class="tag">${escapeHtml(t)}</span></li>`).join("")}
+        </ul>
+      </article>
+    `).join("");
+  }
+
+  q.addEventListener("input", ()=>{
+    state.query = q.value.trim().toLowerCase();
+    render();
+  });
+
+  clearBtn.addEventListener("click", ()=>{
+    state.tags.clear();
+    q.value = "";
+    state.query = "";
+    Array.from(filtersEl.querySelectorAll('input[type="checkbox"]')).forEach(cb => cb.checked = false);
+    render();
+    q.focus();
+  });
+
+  renderFilters();
+  render();
+})();
+</script>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="small">© <span id="y"></span> Pramod Chundury. Built with plain HTML/CSS.</div>
+      <div class="small">
+        <a href="mailto:cvspramod@gmail.com">cvspramod@gmail.com</a>
+        <span aria-hidden="true"> · </span><a href="https://www.linkedin.com/in/pramod-chundury-8741ab29b/" aria-label="LinkedIn profile">LinkedIn</a>
+        <span aria-hidden="true"> · </span><a href="https://scholar.google.com/citations?user=tfT5Jw4AAAAJ" aria-label="Google Scholar profile">Google Scholar</a>
+        <span aria-hidden="true"> · </span><a href="https://github.com/pchundury" aria-label="GitHub profile">GitHub</a>        
+        <span aria-hidden="true"> · </span><a href="https://x.com/pramodoro" aria-label="X profile">X</a><br />
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
